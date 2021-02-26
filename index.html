@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Random User Generator</title>
+</head>
+<body>
+
+  <div id="app">
+    <img :class="gender" :src="picture" :alt="`${firstName} ${lastName}`">
+    <h1><span class="title">{{title}} </span>  {{firstName}} {{lastName}} </h1>
+    <h3> <span class="email">Email </span>{{email}}</h3>
+    <p>Location :<span> {{location}}</span>   Phone:<span>{{phone}}</span></p>
+    <button :class="gender" v-on:click="getUser()">Get Random User </button>
+  </div>
+
+
+
+
+
+  <script src="https://unpkg.com/vue@3.0.5"></script> 
+  <!-- <script src="js/extarinal/vue.js"></script> -->
+  <script src="js/main.js"></script>
+</body>
+</html>
